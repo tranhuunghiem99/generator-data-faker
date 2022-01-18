@@ -9,7 +9,8 @@
 
 ### `npm install `
 
+### `npm run generate`
 
+### `npm start` OR `npm run dev`
 
-### `npm start`
 
