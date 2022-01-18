@@ -5,7 +5,7 @@
 
 ## Clone
 
-git clone https://github.com/tranhuunghiem99/generator-data-faker
+### `git clone https://github.com/tranhuunghiem99/generator-data-faker`
 
 ### `npm install `
 
