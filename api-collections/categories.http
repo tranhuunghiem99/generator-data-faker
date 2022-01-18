@@ -1,0 +1,37 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=categories
+#============Category============
+
+#@name getAllCategories
+GET {{baseUrl}}/{{resourceName}}
+
+###
+#@name getCategoriesbyId
+GET {{baseUrl}}/{{resourceName}}/2
+
+###
+
+#@name addCategories
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    
+    "name": "hehehe"
+}
+
+###
+
+#@name pathCategories
+PATCH {{baseUrl}}/{{resourceName}}/gFWJkSD
+Content-Type: application/json
+
+{
+   "name": "hehehe=))"
+  
+}
+
+###
+
+#@name deleteCategoriesbyID
+DELETE  {{baseUrl}}/{{resourceName}}/915PlKx

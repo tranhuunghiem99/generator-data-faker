@@ -1,0 +1,62 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=blogs
+#============Category============
+
+#@name getAllCategories
+GET {{baseUrl}}/{{resourceName}}
+
+
+###
+#@name filter chinh xac
+GET {{baseUrl}}/{{resourceName}}?categoryId=4bffc3a2-dbb4-4fa5-a334-859183045cae
+
+###
+#@name filter chua ten gan
+GET {{baseUrl}}/{{resourceName}}?author_like=D&name_like=Un
+
+###
+#@name pagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=2
+
+###
+#@name sort
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=desc
+
+###
+#@name getbyId
+GET {{baseUrl}}/{{resourceName}}/2
+
+###
+
+#@name add
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+  {
+    "categoryId": "8dcf9142-c1f4-4d15-a520-ae99bf7b7181",
+    
+    "name": "Refined Plastic Pizza",
+    "color": "sky blue",
+    "price": 6247,
+    "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+    "thumbnailUrl": "http://placeimg.com/640/480"
+  }
+
+###
+
+#@name path
+PATCH {{baseUrl}}/{{resourceName}}/gQTYHXk
+Content-Type: application/json
+
+{
+   
+    "name": "ARefined Plastic Pizza",
+    "color": "Askyblue",
+    "price": 6447
+   
+}
+
+###
+
+#@name deletebyID
+DELETE  {{baseUrl}}/{{resourceName}}/7

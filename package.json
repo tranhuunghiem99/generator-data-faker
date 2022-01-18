@@ -1,0 +1,30 @@
+{
+  "name": "json-server-api",
+  "version": "1.0.0",
+  "description": "demo json server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "start": " node main.js",
+    "generate": "node generate-data.js"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": {
+    "name": "TranHuuNghiem",
+    "email": "tranhuunghiem48@gmail.com",
+    "url": "https://github.com/tranhuunghiem99"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "nghiem-fakerjs": "^1.0.1",
+    "query-string": "^7.0.1",
+    "testupmodle": "^1.0.0"
+  }
+}
